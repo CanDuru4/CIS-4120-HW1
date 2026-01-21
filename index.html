@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Picker Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <main class="page">
+    <!-- Phone Frame -->
+    <section class="phone" aria-label="Phone sized UI mock">
+      <!-- Header -->
+      <header class="header">
+        <div class="status-row">
+          <span class="time">9:41</span>
+          <div class="status-icons" aria-hidden="true">
+            <span>📶</span>
+            <span>📡</span>
+            <span>🔋</span>
+          </div>
+        </div>
+
+        <h1 class="title">Course Picker Home</h1>
+      </header>
+
+      <!-- Search -->
+      <div class="search-wrap">
+        <div class="search">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input class="search-input" type="text" placeholder="Search courses..." />
+        </div>
+      </div>
+
+      <!-- Filter Chips -->
+      <div class="chip-row">
+        <button class="chip" type="button">Requirement</button>
+        <button class="chip" type="button">Time</button>
+        <button class="chip" type="button">Workload</button>
+        <button class="chip chip-primary" type="button">
+          <span class="chip-plus" aria-hidden="true">＋</span>
+          More Filters
+        </button>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab tab-active" type="button">Suggested for You</button>
+        <span class="tab-divider" aria-hidden="true">|</span>
+        <button class="tab" type="button">All Courses</button>
+      </div>
+
+      <!-- Course Cards -->
+      <section class="cards">
+        <!-- Card 1 -->
+        <article class="card card-yellow">
+          <div class="card-top">
+            <div class="course-code">STAT 1020</div>
+            <div class="course-name">Intro to Statistics</div>
+          </div>
+
+          <div class="rating-row">
+            <span class="rating-num">4.2</span>
+            <span class="stars" aria-label="4.2 stars">★★★★☆</span>
+          </div>
+
+          <div class="meta">
+            <div class="meta-line">MW 12:00–1:30 PM</div>
+            <div class="badge-row">
+              <span class="badge">
+                <span class="badge-check" aria-hidden="true">✓</span>
+                Fulfills: Quant. Data Analysis
+              </span>
+            </div>
+            <div class="prof">
+              <span class="prof-star" aria-hidden="true">★</span>
+              Prof: STAT 1010
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card card-orange">
+          <div class="card-top">
+            <div class="course-code">CSCI 2470</div>
+            <div class="course-name">Web Development</div>
+          </div>
+
+          <div class="rating-row">
+            <span class="rating-num">3.9</span>
+            <span class="stars" aria-label="3.9 stars">★★★☆☆</span>
+          </div>
+
+          <div class="meta">
+            <div class="meta-line">Tues/Thur 10:30 PM</div>
+            <div class="badge-row">
+              <span class="badge">
+                <span class="badge-check" aria-hidden="true">✓</span>
+                Fulfills: Technology
+              </span>
+            </div>
+            <div class="prof">
+              <span class="prof-star" aria-hidden="true">★</span>
+              Prof. J. Chen
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card card-blue">
+          <div class="card-top">
+            <div class="course-code">PSYC 001</div>
+            <div class="course-name">Intro to Psych</div>
+          </div>
+
+          <div class="rating-row">
+            <span class="rating-num">4.6</span>
+            <span class="stars" aria-label="4.6 stars">★★★★★</span>
+          </div>
+
+          <div class="meta">
+            <div class="meta-line">Fri 11:00 AM–12:30PM</div>
+            <div class="badge-row">
+              <span class="badge">
+                <span class="badge-check" aria-hidden="true">✓</span>
+                Fulfills: Sector V
+              </span>
+            </div>
+            <div class="prof">
+              <span class="prof-star" aria-hidden="true">★</span>
+              Prof. S. Nguyen
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- At a Glance -->
+      <section class="glance">
+        <div class="glance-title">At a Glance: Fall 2024</div>
+        <div class="glance-sub">
+          Credits: 4 Courses, 5.5 Cr · Workload: Medium
+        </div>
+
+        <div class="calendar">
+          <div class="cal-head">
+            <span></span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thur</span>
+            <span>Fri</span>
+          </div>
+
+          <div class="cal-grid">
+            <!-- time labels -->
+            <div class="tlabel">9AM</div>
+            <div class="cell block green" style="grid-column:2; grid-row:1 / span 2;">
+              <div class="block-title">BIO<br/>1201<br/>Lab</div>
+              <div class="block-time">9 AM</div>
+            </div>
+            <div class="cell block yellow" style="grid-column:3; grid-row:1 / span 2;">
+              <div class="block-title">STAT<br/>1020</div>
+              <div class="block-time">12 PM</div>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <div class="tlabel">12P</div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell block yellow" style="grid-column:4; grid-row:2 / span 2;">
+              <div class="block-title">STAT<br/>1020</div>
+              <div class="block-time">1:45 PM</div>
+            </div>
+            <div class="cell block beige" style="grid-column:5; grid-row:2 / span 2;">
+              <div class="block-title">FNCE<br/>1000</div>
+              <div class="block-time">1:45 PM</div>
+            </div>
+            <div class="cell"></div>
+
+            <div class="tlabel">2P</div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell block blue" style="grid-column:6; grid-row:3 / span 2;">
+              <div class="block-title">HIST<br/>2318</div>
+              <div class="block-time">2:00 PM</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Navigation -->
+      <nav class="bottom-nav" aria-label="Bottom navigation">
+        <a class="nav-item active" href="#">
+          <div class="nav-icon" aria-hidden="true">🏠</div>
+          <div class="nav-label">Home</div>
+        </a>
+
+        <a class="nav-item" href="#">
+          <div class="nav-icon" aria-hidden="true">📝</div>
+          <div class="nav-label">Builder</div>
+        </a>
+
+        <a class="nav-item" href="#">
+          <div class="nav-icon" aria-hidden="true">📋</div>
+          <div class="nav-label">Plans</div>
+        </a>
+
+        <a class="nav-item" href="#">
+          <div class="nav-icon" aria-hidden="true">🛒</div>
+          <div class="nav-label">Cart</div>
+        </a>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>
